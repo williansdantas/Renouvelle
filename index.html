@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Espaço Renouvelle</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'Helvetica';
+      src: local('Helvetica'), url(https://fonts.gstatic.com/s/helvetica/v1/fNeF7YSop3UzBWK4oMpoFO6xUklJ.woff2) format('woff2');
+    }
+    @font-face {
+      font-family: 'Helvetica Light';
+      src: local('Helvetica Light'), url(https://fonts.gstatic.com/s/helvetica/v1/XE5B8C-5ZgUUVmErlA.woff2) format('woff2');
+    }
+    body {
+      background-color: #152927;
+      color: #e6d8b6;
+      font-family: 'Helvetica', Arial, sans-serif;
+    }
+    h1, h2, h5 {
+      font-family: 'Helvetica', Arial, sans-serif;
+      font-weight: 500;
+    }
+    p, .card-text {
+      font-family: 'Helvetica Light', Arial, sans-serif;
+      font-weight: 300;
+    }
+    .hero-section {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #152927;
+      color: #e6d8b6;
+      text-align: center;
+      padding-top: 70px; /* Ajuste para evitar sobreposição com o header fixo */
+    }
+    .btn-custom {
+      margin: 10px;
+      color: #152927;
+      background-color: #e6d8b6;
+      border: none;
+    }
+    .btn-custom:hover {
+      background-color: #d6c6a1;
+    }
+    .logo {
+      max-width: 600px; /* Aumentar o tamanho do logotipo */
+      margin-bottom: 20px;
+    }
+    .logo-small {
+      max-width: 40px; /* Tamanho pequeno do logotipo */
+    }
+    .social-icons a {
+      color: #e6d8b6;
+      margin: 0 10px;
+      font-size: 24px;
+    }
+    .header-with-shadow {
+      background-color: #152927;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+      color: #d6c6a1; /* Cor dourada usada no cabeçalho */
+    }
+    .card-title, .card-text {
+      color: #051800; /* Cor para título e texto nos cards */
+    }
+    .card-text {
+      color: #1c3a1a; /* Cor mais escura para as descrições */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header com ícones de redes sociais e logotipo pequeno -->
+  <header class="fixed-top d-flex justify-content-between align-items-center p-3 header-with-shadow">
+    <div class="social-icons">
+      <a href="https://www.instagram.com/espaco.renouvelle/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@espaco.renouvelle?_t=8ncOzNdpp02&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=100076238110369" target="_blank"><i class="fab fa-facebook"></i></a>
+    </div>
+    <img src="./assets/IM_2.jpg" alt="Espaço Renouvelle" class="logo-small">
+  </header>
+
+  <div class="hero-section">
+    <img src="./assets/IM_1.jpg" alt="Espaço Renouvelle" class="logo">
+    <h1>Bem-vinda!</h1>
+    <p>Beleza e Estética em um só lugar</p>
+    <div>
+      <a href="https://api.whatsapp.com/send/?phone=5511970534201" target="_blank" class="btn btn-custom">WhatsApp</a>
+      <a href="#servicos" class="btn btn-custom">Serviços</a>
+    </div>
+    <div class="mt-4">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/o5Z2Fi26hu0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div id="servicos" class="container mt-5">
+    <h2 class="text-center">Nossos Serviços</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="./assets/servico1.jpg" class="card-img-top" alt="Serviço 1">
+          <div class="card-body">
+            <h5 class="card-title">Corte de Cabelo</h5>
+            <p class="card-text">Cortes modernos para realçar sua beleza.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="./assets/servico2.jpg" class="card-img-top" alt="Serviço 2">
+          <div class="card-body">
+            <h5 class="card-title">Manicure e Pedicure</h5>
+            <p class="card-text">Cuidados especiais para suas unhas.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="./assets/servico3.jpg" class="card-img-top" alt="Serviço 3">
+          <div class="card-body">
+            <h5 class="card-title">Maquiagem</h5>
+            <p class="card-text">Maquiagem profissional para todas as ocasiões.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
