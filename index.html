@@ -29,7 +29,6 @@
       font-weight: 300;
     }
     .hero-section {
-      height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -37,7 +36,7 @@
       background-color: #152927;
       color: #e6d8b6;
       text-align: center;
-      padding-top: 70px; /* Ajuste para evitar sobreposição com o header fixo */
+      padding: 70px 20px 20px 20px; /* Ajuste para evitar sobreposição com o header fixo */
     }
     .btn-custom {
       margin: 10px;
@@ -49,7 +48,7 @@
       background-color: #d6c6a1;
     }
     .logo {
-      max-width: 600px; /* Aumentar o tamanho do logotipo */
+      max-width: 100%; /* Ajustar logo para ser responsivo */
       margin-bottom: 20px;
     }
     .logo-small {
@@ -94,15 +93,17 @@
       <a href="#servicos" class="btn btn-custom">Serviços</a>
     </div>
     <div class="mt-4">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/o5Z2Fi26hu0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="ratio ratio-16x9">
+        <iframe src="https://www.youtube.com/embed/o5Z2Fi26hu0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
     </div>
   </div>
 
   <div id="servicos" class="container mt-5">
     <h2 class="text-center">Nossos Serviços</h2>
     <div class="row">
-      <div class="col-md-4">
-        <div class="card mb-4">
+      <div class="col-md-4 col-sm-6 mb-4">
+        <div class="card">
           <img src="./assets/servico1.jpg" class="card-img-top" alt="Serviço 1">
           <div class="card-body">
             <h5 class="card-title">Corte de Cabelo</h5>
@@ -110,8 +111,8 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card mb-4">
+      <div class="col-md-4 col-sm-6 mb-4">
+        <div class="card">
           <img src="./assets/servico2.jpg" class="card-img-top" alt="Serviço 2">
           <div class="card-body">
             <h5 class="card-title">Manicure e Pedicure</h5>
@@ -119,8 +120,8 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card mb-4">
+      <div class="col-md-4 col-sm-6 mb-4">
+        <div class="card">
           <img src="./assets/servico3.jpg" class="card-img-top" alt="Serviço 3">
           <div class="card-body">
             <h5 class="card-title">Maquiagem</h5>
