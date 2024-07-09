@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Espaço Renouvelle</title>
-  <link rel="icon" href="./assets/IM_2.jpg" type="image/jpeg">
+  <link rel="icon" type="image/png" href="./assets/favicon.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
   <style>
@@ -17,7 +17,7 @@
       src: local('Helvetica Light'), url(https://fonts.gstatic.com/s/helvetica/v1/XE5B8C-5ZgUUVmErlA.woff2) format('woff2');
     }
     body {
-      background-color: #152927;
+      background-color: #222B20;
       color: #e6d8b6;
       font-family: 'Helvetica', Arial, sans-serif;
     }
@@ -34,14 +34,14 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background-color: #152927;
+      background-color: #222B20;
       color: #e6d8b6;
       text-align: center;
-      padding: 70px 20px 20px 20px; /* Ajuste para evitar sobreposição com o header fixo */
+      padding: 70px 20px 20px 20px;
     }
     .btn-custom {
       margin: 10px;
-      color: #152927;
+      color: #222B20;
       background-color: #e6d8b6;
       border: none;
     }
@@ -49,11 +49,14 @@
       background-color: #d6c6a1;
     }
     .logo {
-      max-width: 100%; /* Ajustar logo para ser responsivo */
+      max-width: 100%;
       margin-bottom: 20px;
     }
     .logo-small {
-      max-width: 40px; /* Tamanho pequeno do logotipo */
+      max-width: 40px;
+    }
+    .logo-large {
+      max-width: 800px;
     }
     .social-icons a {
       color: #e6d8b6;
@@ -61,15 +64,30 @@
       font-size: 24px;
     }
     .header-with-shadow {
-      background-color: #152927;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-      color: #d6c6a1; /* Cor dourada usada no cabeçalho */
+      background-color: #222B20;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      color: #d6c6a1;
     }
     .card-title, .card-text {
-      color: #051800; /* Cor para título e texto nos cards */
+      color: #051800;
     }
     .card-text {
-      color: #1c3a1a; /* Cor mais escura para as descrições */
+      color: #1c3a1a;
+    }
+    @media (max-width: 576px) {
+      .hero-section {
+        padding: 50px 10px 10px 10px;
+      }
+      .btn-custom {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .social-icons a {
+        font-size: 20px;
+      }
+      .logo-large {
+        max-width: 100%;
+      }
     }
   </style>
 </head>
@@ -86,17 +104,12 @@
   </header>
 
   <div class="hero-section">
-    <img src="./assets/IM_1.jpg" alt="Espaço Renouvelle" class="logo">
+    <img src="./assets/IM_1.jpg" alt="Espaço Renouvelle" class="logo-large">
     <h1>Bem-vinda!</h1>
     <p>Beleza e Estética em um só lugar</p>
     <div>
       <a href="https://api.whatsapp.com/send/?phone=5511970534201" target="_blank" class="btn btn-custom">WhatsApp</a>
       <a href="#servicos" class="btn btn-custom">Serviços</a>
-    </div>
-    <div class="mt-4">
-      <div class="ratio ratio-16x9">
-        <iframe src="https://www.youtube.com/embed/o5Z2Fi26hu0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
     </div>
   </div>
 
@@ -105,7 +118,7 @@
     <div class="row">
       <div class="col-md-4 col-sm-6 mb-4">
         <div class="card">
-          <img src="./assets/servico1.jpg" class="card-img-top" alt="Serviço 1">
+          <img src="./assets/servico1.jpg" class="card-img-top" alt="Serviço 1" style="max-width: 100%;">
           <div class="card-body">
             <h5 class="card-title">Corte de Cabelo</h5>
             <p class="card-text">Cortes modernos para realçar sua beleza.</p>
@@ -114,7 +127,7 @@
       </div>
       <div class="col-md-4 col-sm-6 mb-4">
         <div class="card">
-          <img src="./assets/servico2.jpg" class="card-img-top" alt="Serviço 2">
+          <img src="./assets/servico2.jpg" class="card-img-top" alt="Serviço 2" style="max-width: 100%;">
           <div class="card-body">
             <h5 class="card-title">Manicure e Pedicure</h5>
             <p class="card-text">Cuidados especiais para suas unhas.</p>
@@ -123,7 +136,7 @@
       </div>
       <div class="col-md-4 col-sm-6 mb-4">
         <div class="card">
-          <img src="./assets/servico3.jpg" class="card-img-top" alt="Serviço 3">
+          <img src="./assets/servico3.jpg" class="card-img-top" alt="Serviço 3" style="max-width: 100%;">
           <div class="card-body">
             <h5 class="card-title">Maquiagem</h5>
             <p class="card-text">Maquiagem profissional para todas as ocasiões.</p>
